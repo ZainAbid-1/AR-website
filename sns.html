@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNS - Augmented Reality Campus Navigation System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b1f3f;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #112d57;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    header h1 {
+      margin-right: auto;
+      font-size: 1.5rem;
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1ecaff;
+    }
+    .main-heading {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .main-heading h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .main-heading h2 {
+      font-size: 1.8rem;
+      margin: 1rem 0;
+      text-align: center;
+      color: #aad4f5;
+    }
+    .content {
+      display: flex;
+      justify-content: flex-start;
+      padding: 2rem;
+      align-items: flex-start;
+      gap: 3rem;
+    }
+    .content img {
+      width: 35%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .text {
+      width: 55%;
+      text-align: left;
+    }
+    .text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #cdd6e4;
+      max-width: 100%;
+    }
+    .places {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .places h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .places a {
+      text-decoration: none;
+      color: #1ecaff;
+      font-weight: bold;
+      margin: 0 0.5rem;
+    }
+    .places a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #112d57;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+    footer .download {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    footer .store-image {
+      width: 200px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    footer .store-image:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NUST</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href="idea.html">The idea behind this</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main-heading">
+      <h1>Augmented Reality Campus Navigation System</h1>
+      <h2>Scanned Location: School of Natural Sciences (SNS)</h2>
+    </div>
+    <div class="content">
+      <img src="sns.jpeg" alt="SNS Image">
+      <div class="text">
+        <h3>Description:</h3>
+        <p>
+          The School of Natural Sciences (SNS) at NUST is dedicated to providing high-quality education in various scientific disciplines. The school focuses on fostering a deep understanding of the natural world through innovative research, cutting-edge facilities, and a collaborative learning environment. SNS offers programs in fields like physics, chemistry, and mathematics, preparing students for global challenges.
+        </p>
+        <div class="places">
+          <h3>Nearby Places Around SNS</h3>
+          <a href="smme.html">SMME</a>
+          <a href="retro.html">Retro</a>
+          <h3>Location: SNS, NUST H-12 Campus</h3>
+          <p><a href="https://maps.app.goo.gl/846p3NGrmuCFMuti8" target="_blank">Open in Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="download">
+      <h3>Download our application "XYZ" available on Playstore/Appstore to access the 3-D model feature.</h3>
+      <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+        <img src="apps.webp" alt="Play Store" class="store-image">
+      </a>
+    </div>
+    &copy; 2024 NUST Augmented Reality Campus Navigation System
+  </footer>
+</body>
+</html>
