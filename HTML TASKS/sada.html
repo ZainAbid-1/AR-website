@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SADA - Augmented Reality Campus Navigation System</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b1f3f;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #112d57;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    header h1 {
+      margin-right: auto;
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1ecaff;
+    }
+    .main-heading {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .main-heading h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .main-heading h2 {
+      font-size: 1.8rem;
+      margin: 1rem 0;
+      color: #aad4f5;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+    .content img {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .text {
+      max-width: 600px;
+    }
+    .text h3 {
+      margin-top: 0;
+    }
+    .text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #cdd6e4;
+    }
+    .places {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .places h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .places a {
+      text-decoration: none;
+      color: #1ecaff;
+      font-weight: bold;
+      margin: 0 0.5rem;
+    }
+    .places a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #112d57;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+    footer .download {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    footer .store-image {
+      width: 150px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    footer .store-image:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+      }
+      header h1 {
+        font-size: 1.2rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .main-heading h1 {
+        font-size: 2rem;
+      }
+      .main-heading h2 {
+        font-size: 1.5rem;
+      }
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .content img {
+        width: 100%;
+      }
+      .text {
+        width: 100%;
+        padding: 0 1rem;
+      }
+      footer .store-image {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NUST</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href="idea.html">The idea behind this</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main-heading">
+      <h1>Augmented Reality Campus Navigation System</h1>
+      <h2>Scanned Location: School of Art, Design, and Architecture (SADA)</h2>
+    </div>
+    <div class="content">
+      <img src="sada.jpeg" alt="SADA Image">
+      <div class="text">
+        <h3>Description:</h3>
+        <p>
+          The School of Art, Design, and Architecture (SADA) at NUST is a creative hub fostering innovation and artistic excellence. Known for its modern infrastructure and cutting-edge facilities, SADA is a leading institution offering programs in architecture, design, and related disciplines. It provides students with an inspiring environment to hone their creative skills and academic knowledge.
+        </p>
+        <div class="places">
+          <h3>Nearby Places Around SADA</h3>
+          <a href="C1.html">Concordia 1</a>
+          <a href="#">HBL ground</a>
+          <h3>Location: SADA, NUST H-12</h3>
+          <p><a href="https://maps.app.goo.gl/wAZxxSm27ZSNwN8k8" target="_blank">Open in Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="download">
+      <h3>Download our application "XYZ" available on Playstore/Appstore to access the 3-D model feature.</h3>
+      <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+        <img src="apps.webp" alt="Play Store" class="store-image">
+      </a>
+    </div>
+    &copy; 2024 NUST Augmented Reality Campus Navigation System
+  </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SINES - Augmented Reality Campus Navigation System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b1f3f;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #112d57;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1ecaff;
+    }
+    .main-heading {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .main-heading h1 {
+      font-size: 2rem;
+    }
+    .main-heading h2 {
+      font-size: 1.2rem;
+      color: #aad4f5;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .content img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .text {
+      max-width: 600px;
+    }
+    .text h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #cdd6e4;
+    }
+    .places {
+      margin-top: 1.5rem;
+    }
+    .places h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .places a {
+      text-decoration: none;
+      color: #1ecaff;
+      font-weight: bold;
+      margin: 0 0.5rem;
+    }
+    .places a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #112d57;
+      color: #ffffff;
+    }
+    footer .download {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    footer .store-image {
+      width: 150px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    footer .store-image:hover {
+      transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .main-heading h1 {
+        font-size: 1.5rem;
+      }
+      .main-heading h2 {
+        font-size: 1rem;
+      }
+      .content {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+      }
+      .text h3 {
+        font-size: 1.2rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .main-heading h1 {
+        font-size: 1.2rem;
+      }
+      .main-heading h2 {
+        font-size: 0.9rem;
+      }
+      .content img {
+        max-width: 90%;
+      }
+      .text {
+        max-width: 100%;
+        padding: 0 1rem;
+      }
+      .text h3 {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NUST</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href="idea.html">The idea behind this</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main-heading">
+      <h1>Augmented Reality Campus Navigation System</h1>
+      <h2>Scanned Location: SINES (Strategic Initiative for NUST Enterprises and Services)</h2>
+    </div>
+    <div class="content">
+      <img src="sines.jpg" alt="SINES Image">
+      <div class="text">
+        <h3>Description:</h3>
+        <p>
+          Established in February 2022, SINES is structured around three core components: Academics, Interdisciplinary Research, and Industry Partnerships. SINES houses 32 research labs affiliated with 10 different schools of NUST and 10 R&D industries integrated into this environment, fostering interdisciplinary collaboration.
+        </p>
+        <div class="places">
+          <h3>Nearby Places Around SINES</h3>
+          <a href="NSTP.html">NSTP</a>
+          <a href="nshs.html">NSHS</a>
+          <h3>Location: SINES, NUST H-12 Campus</h3>
+          <p><a href="https://maps.app.goo.gl/sc2w81VxWWK8fPYt6" target="_blank">Open in Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="download">
+      <h3>Download our application "XYZ" available on Playstore/Appstore to access the 3-D model feature.</h3>
+      <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+        <img src="apps.webp" alt="Play Store" class="store-image">
+      </a>
+    </div>
+    &copy; 2024 NUST Augmented Reality Campus Navigation System
+  </footer>
+</body>
+</html>

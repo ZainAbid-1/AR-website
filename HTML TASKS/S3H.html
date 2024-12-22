@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S3H - Augmented Reality Campus Navigation System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0b1f3f;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #112d57;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1ecaff;
+    }
+    .main-heading {
+      text-align: center;
+      margin: 2rem 1rem;
+    }
+    .main-heading h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    .main-heading h2 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      color: #aad4f5;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .text {
+      flex: 1;
+      min-width: 280px;
+      text-align: left;
+    }
+    .text h3 {
+      font-size: 1.3rem;
+    }
+    .text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #cdd6e4;
+    }
+    .places {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .places h3 {
+      font-size: 1.3rem;
+    }
+    .places a {
+      text-decoration: none;
+      color: #1ecaff;
+      font-weight: bold;
+      margin: 0 0.5rem;
+    }
+    .places a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #112d57;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+    footer .download {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    footer .store-image {
+      width: 150px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    footer .store-image:hover {
+      transform: scale(1.1);
+    }
+    @media (max-width: 768px) {
+      .main-heading h1 {
+        font-size: 1.8rem;
+      }
+      .main-heading h2 {
+        font-size: 1.2rem;
+      }
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NUST</h1>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home Page</a></li>
+        <li><a href="idea.html">The idea behind this</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="main-heading">
+      <h1>Augmented Reality Campus Navigation System</h1>
+      <h2>Scanned Location: School of Social Sciences & Humanities (S3H)</h2>
+    </div>
+    <div class="content">
+      <img src="S3H.jpeg" alt="S3H Image">
+      <div class="text">
+        <h3>Description:</h3>
+        <p>
+          The School of Social Sciences & Humanities (S3H) at NUST provides an intellectually stimulating environment for students to explore fields like psychology, sociology, economics, and humanities. Known for its interdisciplinary approach and focus on social change, S3H encourages critical thinking, research, and innovation across diverse academic disciplines. With state-of-the-art facilities and a passionate faculty, S3H is a hub for the next generation of social scientists and change-makers.
+        </p>
+        <div class="places">
+          <h3>Nearby Places Around S3H</h3>
+          <a href="library.html">Central Library</a>
+          <a href="NBS.html">NBS</a>
+          <h3>Location: S3H, NUST H-12</h3>
+          <p><a href="https://maps.app.goo.gl/Vije3GDRtgBfqSe56" target="_blank">Open in Google Maps</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="download">
+      <h3>Download our application "XYZ" available on Playstore/Appstore to access the 3-D model feature.</h3>
+      <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+        <img src="apps.webp" alt="Play Store" class="store-image">
+      </a>
+    </div>
+    &copy; 2024 NUST Augmented Reality Campus Navigation System
+  </footer>
+</body>
+</html>
+
